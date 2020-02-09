@@ -1,7 +1,13 @@
 # BehEMOT.Paper
-Additional information for the "The Other Guys" paper.
 
-## Kernel Patch Protection
+Additional information for the "The Other Guys" paper, in which I discuss the challenges of monitoring x64 Windows OSes. When I started this project (2012), Windows was transitioning from x32 to x64 systems and introducing significative changes, such as KPP. In this repo, I present extra information not added to the paper, such as KPP bypasses, AV practices. I also show how sandboxes of that time used to fail to analyze PE+ binaries. Since then, our developed solution (BehEMOT) has evolved and was deployed as an online sandbox.
+
+## Availability
+
+* The paper is available [here](https://secret.inf.ufpr.br/papers/behemot.pdf)
+* The sandbox is deployed [here](https://corvus.inf.ufpr.br/)
+
+## Kernel Patch Protection (KPP)
 
 We pointed on the paper which the Kernel Patch Protection (KPP) denies changing kernel structures, thus prohibiting kernel hooks used for monitoring, such as SSDT hooking. However, some tried to overcome such limitation by disabling the kernel protection. 
 
